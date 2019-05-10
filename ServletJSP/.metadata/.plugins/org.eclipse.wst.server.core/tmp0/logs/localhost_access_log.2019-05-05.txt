@@ -1,0 +1,7 @@
+127.0.0.1 - - [05/May/2019:15:54:06 +0700] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [05/May/2019:15:54:32 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [05/May/2019:15:54:33 +0700] "GET /MavenWebApp/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/May/2019:15:54:33 +0700] "GET /MavenWebApp/trang-chu;jsessionid=A3F0AB25E6ACEB6AA26058703787AC2A HTTP/1.1" 200 6969
+0:0:0:0:0:0:0:1 - - [05/May/2019:15:54:33 +0700] "GET /MavenWebApp/template/web/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 153182
+0:0:0:0:0:0:0:1 - - [05/May/2019:15:54:33 +0700] "GET /MavenWebApp/template/web/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/May/2019:15:54:34 +0700] "GET /favicon.ico HTTP/1.1" 404 1085

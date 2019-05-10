@@ -1,0 +1,16 @@
+127.0.0.1 - - [10/May/2019:20:54:46 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:54:48 +0700] "GET /MavenWebApp/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:54:49 +0700] "GET /MavenWebApp/trang-chu;jsessionid=99862B79A835C1017DA6BAAAD812B2B5 HTTP/1.1" 200 6969
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:54:49 +0700] "GET /MavenWebApp/template/web/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:54:49 +0700] "GET /MavenWebApp/template/web/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 153182
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:54:51 +0700] "GET /favicon.ico HTTP/1.1" 404 1085
+127.0.0.1 - - [10/May/2019:20:55:17 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:55:19 +0700] "GET /MavenWebApp/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:55:20 +0700] "GET /MavenWebApp/trang-chu HTTP/1.1" 200 6969
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:56:19 +0700] "POST /MavenWebApp/api-admin-news HTTP/1.1" 405 1117
+127.0.0.1 - - [10/May/2019:20:58:13 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:58:14 +0700] "GET /MavenWebApp/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:20:58:16 +0700] "GET /MavenWebApp/trang-chu HTTP/1.1" 200 6969
+127.0.0.1 - - [10/May/2019:21:29:51 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/May/2019:21:29:52 +0700] "GET /MavenWebApp/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:21:29:53 +0700] "GET /MavenWebApp/trang-chu HTTP/1.1" 200 6969

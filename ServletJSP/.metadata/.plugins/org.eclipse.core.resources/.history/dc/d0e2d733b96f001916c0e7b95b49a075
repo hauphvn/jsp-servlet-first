@@ -1,0 +1,64 @@
+package com.hauphvnjavaweb.dao.impl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.hauphvnjavaweb.dao.ICategoryDAO;
+import com.hauphvnjavaweb.model.CategoryMode;
+
+public class CategoryDAO implements ICategoryDAO{
+
+	public Connection getConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/JAVAWEBDEMO";
+			String user = "root";
+			String password = "1";
+			return DriverManager.getConnection(url, user, password);
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			return null;
+		}
+	}
+	@Override
+	public List<CategoryMode> findAll() {
+		List<CategoryMode> resultList = new ArrayList<CategoryMode>();
+		Connection connection = getConnection();
+		String sql = "SELECT * FROM category";
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		if(connection != null) {
+			try {
+				preparedStatement = connection.prepareStatement(sql);
+				resultSet = preparedStatement.executeQuery();				
+				CategoryMode categoryMode = new CategoryMode();
+				while(resultSet.next()) {
+					categoryMode.setId(resultSet.getLong("id"));
+					categoryMode.setName(resultSet.getString("name"));
+					categoryMode.setCode(resultSet.getString("code"));
+					resultList.add(categoryMode);
+				}
+			} catch (SQLException e) {
+				return null; 
+			}finally {
+				if(connection != null) {
+					connection.close();
+				}
+				if(preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if(resultSet != null) {
+					resultSet.close();
+				}
+			}
+			
+		}
+		return result;
+	}
+
+}

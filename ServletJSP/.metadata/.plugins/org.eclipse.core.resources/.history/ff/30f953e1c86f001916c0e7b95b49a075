@@ -1,0 +1,7 @@
+package com.hauphvnjavaweb.dao.impl;
+
+import com.hauphvnjavaweb.dao.INewDAO;
+
+public class NewsDAO implements INewDAO{
+	
+}

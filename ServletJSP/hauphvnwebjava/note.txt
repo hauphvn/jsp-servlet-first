@@ -1,0 +1,2 @@
+chinh sua file server tomcat:
+sudo chmod -R 755 / duong truyen tomcat

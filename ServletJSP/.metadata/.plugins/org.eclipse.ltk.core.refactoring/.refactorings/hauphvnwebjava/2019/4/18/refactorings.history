@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HomeController.java&apos; to &apos;hauphvnwebjava/src/main/java/com.hauphvnjavaweb.controller.admin&apos;&#x0A;- Original project: &apos;hauphvnwebjava&apos;&#x0A;- Destination element: &apos;hauphvnwebjava/src/main/java/com.hauphvnjavaweb.controller.admin&apos;&#x0A;- Original element: &apos;com.hauphvnjavaweb.controller.web.HomeController.java&apos;" description="Copy compilation unit" destination="/src\/main\/java&lt;com.hauphvnjavaweb.controller.admin" element1="/src\/main\/java&lt;com.hauphvnjavaweb.controller.web{HomeController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556643092056" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.model.UserModel"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.model.AbstractModel"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.dao.ICategoryDAO"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.dao.impl.CategoryDAO"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.service.ICategoryService"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.dao.INewDAO"/>
+    <fullyQualifiedTypeName name="javax.inject.Inject"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.service.INewService"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.dao.GenericDAO"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.dao.impl.AbstractDAO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.mapper.RowMapper"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.model.CategoryMode"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.mapper.CategoryMapper"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.mapper.NewsMapper"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.model.NewsModel"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="com.hauphvnjavaweb.utils.HttpUtil"/>
+</qualifiedTypeNameHistroy>

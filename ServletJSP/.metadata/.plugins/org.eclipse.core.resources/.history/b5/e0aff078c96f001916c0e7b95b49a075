@@ -1,0 +1,9 @@
+package com.hauphvnjavaweb.dao;
+
+import java.util.List;
+
+import com.hauphvnjavaweb.model.NewsModel;
+
+public interface INewDAO {
+	List<NewsModel> findByCategoryId();
+}
