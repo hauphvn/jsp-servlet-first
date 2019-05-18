@@ -1,6 +1,6 @@
 package com.hauphvnjavaweb.model;
 
-public class CategoryMode extends AbstractModel{
+public class CategoryMode extends AbstractModel<CategoryMode>{
 	private String name;
 	private String code;
 	

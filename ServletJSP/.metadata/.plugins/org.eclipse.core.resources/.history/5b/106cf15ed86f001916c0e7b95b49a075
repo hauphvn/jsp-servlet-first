@@ -1,5 +1,0 @@
-package com.hauphvnjavaweb.dao;
-
-public interface GenericDAO {
-
-}

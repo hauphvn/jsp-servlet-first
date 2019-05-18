@@ -1,8 +1,0 @@
-package con.hauphvnjavaweb.service.impl;
-
-import com.hauphvnjavaweb.service.INewService;
-
-public class NewService implements INewService{
-
-}
-	

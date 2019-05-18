@@ -1,12 +1,15 @@
 package com.hauphvnjavaweb.model;
 
-public class NewsModel extends AbstractModel{
+public class NewsModel extends AbstractModel<NewsModel>{
 	private long categoryId;
 	private String content;
 	private String title;
 	private String thumbnail;
 	private String shortDescription;
 	
+	public NewsModel() {
+		
+	}
 	public long getCategoryId() {
 		return categoryId;
 	}

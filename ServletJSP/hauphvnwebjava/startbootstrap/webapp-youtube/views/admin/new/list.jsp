@@ -99,7 +99,7 @@
 			$(function () {
 				window.pagObj = $('#pagination').twbsPagination({
 					totalPages: totalPages,
-					visiblePages: 10,
+					visiblePages: limit,
 					startPage: currentPage,
 					onPageClick: function (event, page) {
 						if (currentPage != page) {

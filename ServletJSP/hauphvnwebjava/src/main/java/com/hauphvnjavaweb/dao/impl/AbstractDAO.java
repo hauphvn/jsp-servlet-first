@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,7 +75,11 @@ public class AbstractDAO implements GenericDAO {
 					preparedStatement.setLong(index, (Long) parameterObj);
 				} else if (parameterObj instanceof String) {
 					preparedStatement.setString(index, (String) parameterObj);
-				}
+				}else if (parameterObj instanceof Timestamp) {
+					preparedStatement.setTimestamp(index, (Timestamp)parameterObj);
+				}else if (parameterObj instanceof Integer) {
+					preparedStatement.setInt(index, (Integer)parameterObj);
+				} 
 			}
 		} catch (SQLException e) {
 			// TODO: handle exception
@@ -82,7 +87,7 @@ public class AbstractDAO implements GenericDAO {
 	}
 
 	@Override
-	public boolean update(String sql, Object... parameters) {
+	public void update(String sql, Object... parameters) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		try {
@@ -92,7 +97,6 @@ public class AbstractDAO implements GenericDAO {
 			setParemeter(preparedStatement, parameters);
 			preparedStatement.executeUpdate();
 			connection.commit();
-			return true;
 		} catch (SQLException e) {
 			if(connection!= null) {
 				try {
@@ -101,7 +105,6 @@ public class AbstractDAO implements GenericDAO {
 					e1.printStackTrace();
 				}
 			}
-			return false;
 		} finally {
 			try {
 				if (connection != null) {
@@ -111,7 +114,6 @@ public class AbstractDAO implements GenericDAO {
 					preparedStatement.close();
 				}
 			} catch (Exception e2) {
-				return false;
 			}
 		}
 	}
@@ -158,5 +160,41 @@ public class AbstractDAO implements GenericDAO {
 				return null;
 			}
 		}
+	}
+
+	@Override
+	public int count(String sql, Object... parameters) {
+		int items = 0;
+		Connection connection = getConnection();
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		if (connection != null) {
+			try {
+				preparedStatement = connection.prepareStatement(sql);
+				setParemeter(preparedStatement, parameters);
+				resultSet = preparedStatement.executeQuery();
+				while (resultSet.next()) {
+					items = resultSet.getInt(1);
+				}
+				return items;
+			} catch (SQLException e) {
+				return 0;
+			} finally {
+				try {
+					if (connection != null) {
+						connection.close();
+					}
+					if (preparedStatement != null) {
+						preparedStatement.close();
+					}
+					if (resultSet != null) {
+						resultSet.close();
+					}
+				} catch (Exception e2) {
+					return 0;
+				}
+			}
+		}
+		return items;// Can not connection
 	}
 }

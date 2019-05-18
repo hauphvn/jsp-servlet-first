@@ -1,6 +1,6 @@
 package com.hauphvnjavaweb.model;
 
-public class UserModel extends AbstractModel{
+public class UserModel extends AbstractModel<UserModel>{
 	private String username;
 	private String password;
 	private String fullname;

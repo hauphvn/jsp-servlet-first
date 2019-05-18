@@ -24,15 +24,15 @@ public class HomeController extends HttpServlet {
 	private INewService newsService;
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		Long categoryId = 1L;
-		Long id = 10L;
-		String title = "Bài viết thể thao 15";
-		NewsModel newsModel = new NewsModel();
-		newsModel.setId(id);
-		newsModel.setTitle(title);
-		req.setAttribute("newsService", newsService.modify(newsModel));
-		RequestDispatcher rd = req.getRequestDispatcher("/views/web/home.jsp");
-		rd.forward(req, resp);
+//		Long categoryId = 1L;
+//		Long id = 10L;
+//		String title = "Bài viết thể thao 15";
+//		NewsModel newsModel = new NewsModel();
+//		newsModel.setId(id);
+//		newsModel.setTitle(title);
+//		req.setAttribute("newsService", newsService.modify(newsModel));
+//		RequestDispatcher rd = req.getRequestDispatcher("/views/web/home.jsp");
+//		rd.forward(req, resp);
 	}
 
 	@Override 	
